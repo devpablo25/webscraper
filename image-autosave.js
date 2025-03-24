@@ -1,0 +1,1 @@
+javascript:(function(){let i=document.querySelectorAll('img[src^="/pimg/"]');i.forEach(e=>{let a=document.createElement('a');a.href=e.src;a.download='image.jpg';document.body.appendChild(a);a.click();document.body.removeChild(a);})})();
