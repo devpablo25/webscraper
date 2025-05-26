@@ -20,5 +20,3 @@ yt-dlp -a list.txt \
   --merge-output-format mp4 \
   --hls-prefer-ffmpeg \
   --restrict-filenames \
-  -o "%(title).100s.%(ext)s" \
-  --exec 'bash -c '\''f="{}"; uuid=$(uuidgen); ext="${f##*.}"; base="${f%.*}"; mv "$f" "${base}-[$uuid].${ext}"'\'''
